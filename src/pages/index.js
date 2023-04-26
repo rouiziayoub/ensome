@@ -13,9 +13,8 @@ import img8 from "../../public/images/img8.png";
 import img9 from "../../public/images/img9.png";
 import img10 from "../../public/images/img10.png";
 import img11 from "../../public/images/img11.png";
-import { BsPlayCircle } from "react-icons/Bs";
+import { FaCompressArrowsAlt, FaRegPlayCircle } from "react-icons/fa";
 import { BiBrain } from "react-icons/bi";
-import { BsGraphUpArrow } from "react-icons/Bs";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { FaKey } from "react-icons/fa";
@@ -50,7 +49,7 @@ export default function Home() {
                 </p>
                 <button className="btn  btn-primary ">Learn more </button>
                 <span className="ms-5 ">
-                  <BsPlayCircle /> Watch the demo
+                  <FaRegPlayCircle  /> Watch the demo
                 </span>
               </div>
               <div className="col-md-6">
@@ -116,7 +115,7 @@ export default function Home() {
                 <div class="card">
                   <div class="card-body">
                     <button className="text-primary my-4 ms-3 btn-stlyle">
-                      <BsGraphUpArrow />
+                      <FaCompressArrowsAlt/>
                     </button>
                     <h3 class="card-title">Embed analytics</h3>
                     <p class="card-text">
