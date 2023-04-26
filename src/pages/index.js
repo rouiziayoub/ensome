@@ -213,7 +213,7 @@ export default function Home() {
                         Proxy
                       </button>
                       <button className=" bg-white mx-1 text-primary  style-btn">
-                        Vpn{" "}
+                        Vpn
                       </button>
                     </div>
                   </div>
