@@ -13,11 +13,8 @@ import img8 from "../../public/images/img8.png";
 import img9 from "../../public/images/img9.png";
 import img10 from "../../public/images/img10.png";
 import img11 from "../../public/images/img11.png";
-import { FaCompressArrowsAlt, FaRegPlayCircle } from "react-icons/fa";
-import { BiBrain } from "react-icons/bi";
-import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { FaKey } from "react-icons/fa";
+import { FaBrain, FaCompressArrowsAlt, FaRegPlayCircle, FaKey, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 
 import Image from "next/image";
 
@@ -58,7 +55,7 @@ export default function Home() {
                   src={img}
                   width={450}
                   height={300}
-                  alt={img}
+                  alt="img"
                 />
               </div>
             </div>
@@ -71,7 +68,7 @@ export default function Home() {
                   src={img2}
                   width={180}
                   height={130}
-                  alt={img2}
+                  alt="img2"
                 />
 
                 <Image src={img3} width={180} height={130} alt={img3} />
@@ -100,7 +97,7 @@ export default function Home() {
                 <div class="card">
                   <div class="card-body">
                     <button className="text-primary my-4 ms-3 btn-stlyle">
-                      <BiBrain />
+                      <FaBrain/>
                     </button>
                     <h3 class="card-title">Machine learning</h3>
                     <p class="card-text">
@@ -165,7 +162,7 @@ export default function Home() {
                   src={img8}
                   width={450}
                   height={300}
-                  alt={img8}
+                  alt="img8"
                 />
               </div>
             </div>
@@ -178,7 +175,7 @@ export default function Home() {
                   src={img9}
                   width={450}
                   height={300}
-                  alt={img9}
+                  alt="img9"
                 />
               </div>
               <div className="col-md-6 ">
@@ -277,10 +274,10 @@ export default function Home() {
             </h2>
             <div className="ms-5 icon">
               <button className="style-icon">
-                <HiOutlineArrowNarrowLeft className="text-black-50" />
+                <FaArrowLeft className="text-black-50" />
               </button>
               <button className="style-icon">
-                <HiOutlineArrowNarrowRight />
+                <FaArrowRight/>
               </button>
             </div>
           </div>
@@ -294,7 +291,7 @@ export default function Home() {
                     src={img11}
                     width={75}
                     height={75}
-                    alt={img11}
+                    alt="img11"
                   />
                   <p class="card-text mx-4  mt-5">
                     ``Ut enim ad minima veniam ,quis nostrum exercitationem
@@ -314,7 +311,7 @@ export default function Home() {
                     src={img10}
                     width={75}
                     height={75}
-                    alt={img10}
+                    alt="img10"
                   />
                   <p class="card-text mx-4 mt-5">
                     ``Ut enim ad minima veniam ,quis nostrum exercitationem

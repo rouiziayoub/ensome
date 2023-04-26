@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import logo from '../../public/images/logo.png'
-
 import { FaRegPlayCircle } from 'react-icons/fa';
 import { NavLink } from 'react-bootstrap';
 
@@ -71,7 +70,7 @@ function Header() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-primary "><FaRegPlayCircle /> Watch the demo</a>
+        <a className="btn btn-primary "><FaRegPlayCircle/> Watch the demo</a>
       </div>
     </nav>
   );
