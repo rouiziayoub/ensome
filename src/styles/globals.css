@@ -37,9 +37,10 @@ span {
   max-width: 300px;
 }
 .style-section {
-  margin-left: 100px;
+  margin-right: 600px;
   max-width: 300px;
 }
+
 .style-p {
   text-align: center;
   color: #9497a1;
@@ -69,4 +70,28 @@ span {
 }
 .card {
   border: none;
+}
+.style-icon {
+  background-color: #f1f6fa;
+  border: 1px solid #f1f6fa;
+  margin-left: 15px;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+.division {
+  background-color: #185cff;
+  display: flex;
+  align-items: center;
+}
+.division .border-end {
+  height: 10vh;
+}
+.conttact {
+  background-color: #f1f6fa;
+}
+.title {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
 }
