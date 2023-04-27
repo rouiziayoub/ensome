@@ -13,10 +13,17 @@ import img8 from "../../public/images/img8.png";
 import img9 from "../../public/images/img9.png";
 import img10 from "../../public/images/img10.png";
 import img11 from "../../public/images/img11.png";
-import { FaBrain, FaCompressArrowsAlt, FaRegPlayCircle, FaKey, FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
+import {
+  FaBrain,
+  FaCompressArrowsAlt,
+  FaRegPlayCircle,
+  FaKey,
+  FaArrowRight,
+  FaArrowLeft,
+} from "react-icons/fa";
 
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,9 +38,9 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section>
+        <section className="home">
           <div className="container">
-            <div className="row mx-5 py-5 ">
+            <div className="row py-5 ">
               <div className="col-md-6 ">
                 <h2 className="fs-1 ">
                   Find true power in your data with Ensome
@@ -46,7 +53,7 @@ export default function Home() {
                 </p>
                 <button className="btn  btn-primary ">Learn more </button>
                 <span className="ms-5 ">
-                  <FaRegPlayCircle  /> Watch the demo
+                  <FaRegPlayCircle /> Watch the demo
                 </span>
               </div>
               <div className="col-md-6">
@@ -63,13 +70,7 @@ export default function Home() {
           <div className="container-fluid logos">
             <div className="row row-logo">
               <div className="col-md-12 ">
-                <Image
-                  className=""
-                  src={img2}
-                  width={180}
-                  height={130}
-                  alt="img2"
-                />
+                <Image src={img2} width={180} height={130} alt="img2" />
 
                 <Image src={img3} width={180} height={130} alt={img3} />
 
@@ -86,7 +87,7 @@ export default function Home() {
         </section>
         <section className="style py-5">
           <h2 className=" style-h2">Why our clients chosse Ensome? </h2>
-          <p className=" py-3 style-p py-2 ">
+          <p className="style-p">
             Doloremque landantium,totam rem aperiam,eaque ipsa quae ab illo
             inventor veritatis et quasi architecto beatae vitae dicta sunt
             explicabo
@@ -97,7 +98,7 @@ export default function Home() {
                 <div class="card">
                   <div class="card-body">
                     <button className="text-primary my-4 ms-3 btn-stlyle">
-                      <FaBrain/>
+                      <FaBrain />
                     </button>
                     <h3 class="card-title">Machine learning</h3>
                     <p class="card-text">
@@ -112,7 +113,7 @@ export default function Home() {
                 <div class="card">
                   <div class="card-body">
                     <button className="text-primary my-4 ms-3 btn-stlyle">
-                      <FaCompressArrowsAlt/>
+                      <FaCompressArrowsAlt />
                     </button>
                     <h3 class="card-title">Embed analytics</h3>
                     <p class="card-text">
@@ -141,9 +142,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="Page"> 
           <div className="container">
-            <div className="row mx-5 py-5 ">
+            <div className="row  py-5 ">
               <div className="col-md-6 ">
                 <h2 className="fs-1 ">
                   Find true power in your data with Ensome
@@ -179,9 +180,7 @@ export default function Home() {
                 />
               </div>
               <div className="col-md-6 ">
-                <h2 className="fs-1 ">
-                  Find true power in your data with Ensome
-                </h2>
+                <h2 className="fs-1 ">Radically new data solutions</h2>
                 <p>
                   set ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium,totam rem aperiam,eaque ipsa
@@ -277,7 +276,7 @@ export default function Home() {
                 <FaArrowLeft className="text-black-50" />
               </button>
               <button className="style-icon">
-                <FaArrowRight/>
+                <FaArrowRight />
               </button>
             </div>
           </div>
@@ -350,23 +349,108 @@ export default function Home() {
           </div>
         </section>
         <section className="conttact">
-          <div className="container pt-5">
+          <div className="container py-5  ">
             <div className="row">
-              <div className="col-md-8 offset-md-1">
+              <div className="col-md-7 ">
                 <h1 className="title">
                   Left questions? Contacts us now for a free consultation and
                   free trial!
                 </h1>
-                <p>
+                <p className="par pb-3">
                   Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                </p>
+                <div className="mb-3">
+                  <p className="contact-style">Email address</p>
+                  <span className="email-tel">ensome@info.co.us</span>
+                </div>
+                <div className="mb-3">
+                  <p className="contact-style">Phone number</p>
+                  <span className="email-tel">+1601-201-5580</span>
+                </div>
+                <div className="mb-3">
+                  <p className="contact-style">Address</p>
+                  <span className="email-tel">
+                    1642 Washington Avenue, Jackson, MS, Mississippi, 39201
+                  </span>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="card">
+                  <div class="card-body">
+                    <h5 class="card-title mb-4">Contact Us</h5>
+                    <form>
+                      <div className="form-division">
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" placeholder="Andrea" />
+                      </div>
+                      <div className="form-division">
+                        <label htmlFor="Email"> Email </label>
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="andrea@gmaol.com"
+                        />
+                      </div>
+                      <div className="form-division">
+                        <label htmlFor="job"> Theme </label>
+                        <input type="text" id="job" placeholder="Job" />
+                      </div>
+                      <div className="form-division">
+                        <label htmlFor="message">Message </label>
+                        <input
+                          type="text"
+                          id="message"
+                          placeholder="Your message "
+                        />
+                      </div>
+                      <div className="form-group mb-4 pt-5">
+                        <input
+                          type="submit"
+                          value="Send"
+                          className="btn btn-primary submit"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-primary">
+          <div className="container py-5 me-3">
+            <div className="row">
+              <div className="col-md-6">
+                <h2 className="Subscribe">Subscribe to our newsletter</h2>
+                <p className=" Sed">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
                 </p>
               </div>
-              <div className="col-md-4"></div>
+              <div className="col-md-6">
+                <div class="input-group w-75 mt-5">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your email"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    className="btn bg-white"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

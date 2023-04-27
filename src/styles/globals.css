@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+
 .logos {
   border-top: 0.2px solid gainsboro;
 }
@@ -19,8 +20,7 @@ p {
   font-size: 18px;
   font-weight: 400px;
   line-height: 33px;
-  font-style: normal;
-  font-family: open sans;
+  font-family: "open sans";
 }
 span {
   font-weight: bold;
@@ -90,8 +90,111 @@ span {
   background-color: #f1f6fa;
 }
 .title {
+  letter-spacing: -0.015em;
+  font-size: 38px;
   font-family: "Manrope";
   font-weight: 700;
-  font-size: 42px;
+  width: 65%;
   line-height: 50px;
+}
+.par {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  font-family: "open sans";
+  width: 60%;
+}
+.email-tel {
+  line-height: 28px;
+  font-family: "open sans";
+  font-size: 16px;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  color: #292d33;
+}
+.contact-style {
+  margin: 0;
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: -0.015em;
+}
+.card-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  color: #292d33;
+  letter-spacing: -0.015em;
+}
+label {
+  font-family: "open Sans";
+  color: #9497a1;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+.form-division {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form-division label {
+  margin-bottom: 10px;
+}
+.form-division input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.submit {
+  margin-left: 60%;
+  padding: 8px 30px;
+}
+.Subscribe {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.015em;
+  color: #fff;
+}
+.Sed {
+  width: 395px;
+  font-family: "open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 33px;
+  color: #fff;
+}
+.input-group input {
+  background-color: #c9dcec;
+}
+.input-group input::placeholder {
+  color: black;
+}
+/* responsive */
+@media (max-widtch: 576px) {
+  .home img,
+  .Page img {
+    width: 354px;
+    height: 224px;
+  }
+  .style-h2 {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .style-p {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .style-style {
+    margin-right: 0;
+  }
 }
