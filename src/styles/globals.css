@@ -15,20 +15,20 @@
 h2 {
   font-weight: bold;
 }
-p {
+/* p {
   color: #9497a1;
   font-size: 18px;
   font-weight: 400px;
   line-height: 33px;
   font-family: "open sans";
-}
+} */
 span {
   font-weight: bold;
 }
-.header {
+/* .header {
   max-width: 75%;
   margin-left: 100px;
-}
+} */
 .style {
   background-color: #f0f9ff;
 }
@@ -177,9 +177,10 @@ label {
 .input-group input::placeholder {
   color: black;
 }
-/* responsive */
-@media (max-widtch: 576px) {
-  .home img,
+/****** responsive ******/
+@media (max-width: 576px) {
+
+  .Home img,
   .Page img {
     width: 354px;
     height: 224px;
@@ -196,5 +197,12 @@ label {
   }
   .style-style {
     margin-right: 0;
+  }
+  .style-section{
+    margin-right: 0;
+    width: 100%;
+  }
+  .Sed{
+    width: 100%;
   }
 }

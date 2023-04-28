@@ -38,8 +38,8 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <section className="home">
-          <div className="container">
+        <section >
+          <div className="container Home">
             <div className="row py-5 ">
               <div className="col-md-6 ">
                 <h2 className="fs-1 ">
@@ -169,7 +169,7 @@ export default function Home() {
             </div>
           </div>
           <div className="container">
-            <div className="row mx-5 py-5">
+            <div className="row py-5">
               <div className="col-md-6">
                 <Image
                   className="img"
@@ -303,7 +303,7 @@ export default function Home() {
                   <p className="mx-4"> COE by PixelPerfect</p>
                 </div>
               </div>
-              <div class="col-md-6 ">
+              <div class="col-md-6 mt-5">
                 <div class="card  position-relative shadow-sm">
                   <Image
                     className="position-absolute top-0 start-0 translate-middle ms-5"

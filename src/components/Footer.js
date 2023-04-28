@@ -19,7 +19,7 @@ function Footer() {
           <div className="col-md-6">
             <Image className="" src={logo} width={141} height={42} alt="logo" />
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-4">
             <h5> About</h5>
             <div>
               <h6>Home</h6>
@@ -28,7 +28,7 @@ function Footer() {
               <h6>Solutions</h6>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-4">
             <h5> Information</h5>
             <div>
               <h6>Contacts</h6>
@@ -37,7 +37,7 @@ function Footer() {
               <h6>FAQ</h6>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 col-4">
             <h5> Service</h5>
             <div>
               <h6>Pages</h6>
